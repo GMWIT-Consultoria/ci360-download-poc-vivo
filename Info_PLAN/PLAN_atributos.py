@@ -93,23 +93,24 @@ todos_dados = pd.read_excel(f'{PATH_BASE_info_PLAN}\Files\planos_approved.xlsx')
 
 #CONEXAO COM O BANCO DE DADOS
 
-""" conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=SAS-AAP.demo.sas.com;'
-                      'Database=CIDB;'
-                      'Trusted_Connection=yes;')
+# print("Conectando com banco de dados")
+# conn = pyodbc.connect('Driver={SQL Server};'
+#                       'Server=SAS-AAP.demo.sas.com;'
+#                       'Database=CIDB;'
+#                       'Trusted_Connection=yes;')
 
 
-cursor = conn.cursor()
-#cursor.execute('SELECT TOP 1000 CHV_OFERTA ,COLUMN_OFFER   ,VALUE_OFFER   ,DT_INIC_VIGENCIA   ,DT_FIM_VIGENCIA  FROM CDM.CRM_TB_ATTR_MOTOR')
+# cursor = conn.cursor()
+# cursor.execute('SELECT TOP 1000 CHV_OFERTA ,COLUMN_OFFER   ,VALUE_OFFER   ,DT_INIC_VIGENCIA   ,DT_FIM_VIGENCIA  FROM CDM.CRM_TB_ATTR_MOTOR')
 
-#APAGAR REGISTROS NA TABELA
-cursor.execute('TRUNCATE TABLE CDM.CRM_TB_ATTR_MOTOR')
-cursor.commit()
+# #APAGAR REGISTROS NA TABELA
+# cursor.execute('TRUNCATE TABLE CDM.CRM_TB_ATTR_MOTOR')
+# cursor.commit()
 
-#PERCORRENDO LINHA A LINHA DA TABELA E INSERINDO NO BANCO DE DADOS
-for indice, cada_linha in todos_dados.iterrows():
-    cursor.execute("insert into CDM.CRM_TB_ATTR_MOTOR (CHV_OFERTA ,COLUMN_OFFER   ,VALUE_OFFER   ,DT_INIC_VIGENCIA   ,DT_FIM_VIGENCIA) values (?,?,?,?,?) ",cada_linha.CHV_OFERTA,cada_linha.COLUMN_OFFER,cada_linha.VALUE_OFFER,cada_linha.DT_INIC_VIGENCIA,cada_linha.DT_FIM_VIGENCIA, )
+# #PERCORRENDO LINHA A LINHA DA TABELA E INSERINDO NO BANCO DE DADOS
+# for indice, cada_linha in todos_dados.iterrows():
+#     cursor.execute("insert into CDM.CRM_TB_ATTR_MOTOR (CHV_OFERTA ,COLUMN_OFFER   ,VALUE_OFFER   ,DT_INIC_VIGENCIA   ,DT_FIM_VIGENCIA) values (?,?,?,?,?) ",cada_linha.CHV_OFERTA,cada_linha.COLUMN_OFFER,cada_linha.VALUE_OFFER,cada_linha.DT_INIC_VIGENCIA,cada_linha.DT_FIM_VIGENCIA, )
 
-conn.commit()
-cursor.close() 
- """
+# conn.commit()
+# cursor.close() 
+# print("Banco gerado com sucesso")
