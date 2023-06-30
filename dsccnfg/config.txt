@@ -1,0 +1,13 @@
+# Enter the agent name configured in CI360 GUI
+agentName = DiscoverAgent
+
+# Enter the tenantId of your CI360 tenant, you find it underneath General in CI360 GUI
+tenantId  = 115886462700013adcd822d0
+
+# Enter the secret of your agent which you created in CI360 GUI
+secret    = MTAyOWVkZTZnamZlM2Q5M2YwOGplN21qYmw5NTcxNTg=
+
+# CI360 Download URL
+baseUrl   = https://extapigwservice-demo.cidemo.sas.com/marketingGateway/discoverService/dataDownload/eventData/
+            
+

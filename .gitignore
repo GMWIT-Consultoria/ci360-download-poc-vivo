@@ -1,0 +1,7 @@
+dscwh/*
+!dscwh/.gitkeep
+Info_PLAN/Files/*
+!Info_PLAN/Files/.gitkeep
+venv/*
+log/*
+!log/.gitkeep
